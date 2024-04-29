@@ -1,0 +1,135 @@
+{
+  "Locations": [
+    {
+        "ID": 0,
+        "Name": "Eeltown",
+        "Description": "You find yourself in the middle of the bustling streets of EEL CITY. The few yellow window lights of the late afternoon twilight reflect softly on the street cobblestones.",
+        "Exits": [
+            {
+                "Destination": 2,
+                "Name": "NORTH",
+                "Obvious": true
+            },
+            {
+                "Destination": 1,
+                "Name": "TAVERN",
+                "Obvious": true
+            },
+            {
+                "Destination": 3,
+                "Name": "SEWER",
+                "Obvious": false
+            }
+        ],
+        "Objects": [
+            {
+                "ID": 0,
+                "Name": "Eel",
+                "LookDescription": "It's an eel just lying on the road!",
+                "GetDescription": "You got the eel!",
+                "MainDialogue": "'sup.",
+                "SecondaryDialogue": "You want me to join you? Sure I guess? Just grab me.",
+                "TertiaryDialogue": null,
+                "CanPickup": true,
+                "PickedUp": false,
+                "IsAnEel": true,
+                "Dialogue topics": [
+                    {
+                        "Subject": "EELS",
+                        "Response": "There are many eels out there. I am but an eely drop in an eely ocean.",
+                        "SecondaryResponse": "Eels are eels. I've told you all I know."
+                    }
+                ]
+            },
+            {
+                "ID": 1,
+                "Name": "Tavern",
+                "LookDescription": "You see a tavern just lying on the road!",
+                "GetDescription": "You don't have enough money for this particular real estate.",
+                "MainDialogue": "You try talking to a guy hanging out outside. He just tells you to leave him alone. Surprisingly rude. And not because I didn't want to write dialogue for him.",
+                "SecondaryDialogue": null,
+                "TertiaryDialogue": null,
+                "CanPickup": false,
+                "PickedUp": false,
+                "IsAnEel": false
+            },
+            {
+                "ID": 2,
+                "Name": "Street",
+                "LookDescription": "One of the streets slithering through EEL CITY. You see a sewer plate in the middle, and something that looks suspiciously like an eel on the ground.",
+                "GetDescription": "You don't get it.",
+                "MainDialogue": "You try talking to all the people in the street at the same time and fail.",
+                "SecondaryDialogue": null,
+                "TertiaryDialogue": null,
+                "CanPickup": false,
+                "PickedUp": false,
+                "IsAnEel": false
+            }
+        ]
+    },
+    {
+        "ID": 1,
+        "Name": "Tavern",
+        "Description": "The EEL TAIL is currently not very full. From what you can see, this place isn't fully implemented yet, which detracts a lot of customers from visiting. You see a BARTENDER and an exit leading back out.",
+        "Exits": [
+            {
+                "Destination": 1,
+                "Name": "EEL CITY",
+                "Obvious": true
+            }
+        ],
+        "Objects": [
+            {
+                "ID": 3,
+                "Name": "Bartender",
+                "LookDescription": "Borktender. It's a dog. For some reason that's definitely not me wanting to make a pun.",
+                "GetDescription": "You get the bartender and put him in your bag. Unfortunately, he exscapes.",
+                "MainDialogue": "'GIVE ME A DRINK, BORKTENDER.', you say. Unfortunately it's impossible to catch it in time.",
+                "SecondaryDialogue": null,
+                "TertiaryDialogue": null,
+                "CanPickup": false,
+                "PickedUp": false,
+                "IsAnEel": false
+            }
+        ]
+    },
+    {
+        "ID": 2,
+        "Name": "SEWERS",
+        "Description": "Sewer count +1. There must be swarms of eels in the SEWAGE but no way to get them out. There's also a STICK on the ground.",
+        "Exits": [
+            {
+                "Destination": 0,
+                "Name": "EEL CITY",
+                "Obvious": true
+            }
+        ],
+        "Objects": [
+            {
+                "ID": 4,
+                "Name": "SEWAGE",
+                "LookDescription": "It's sewage. Don't drink it.",
+                "GetDescription": "You cup your hands and try to get some water, but fail.",
+                "MainDialogue": "You ask the sewage how to get eels. The sewage faintly replies 'ITLL BE YEARS BEFORE YOU CAN CATCH US'.",
+                "SecondaryDialogue": null,
+                "TertiaryDialogue": null,
+                "CanPickup": false,
+                "PickedUp": false,
+                "IsAnEel": false
+            },
+            {
+                "ID": 5,
+                "Name": "STICK",
+                "LookDescription": "It's a debug stick. You can stick it up yours pal.",
+                "GetDescription": "You get the stick despite its numerous protests.",
+                "MainDialogue": "It says: 'dont pick me up bro.'",
+                "SecondaryDialogue": "It says: 'no but for real dont do it pal'.",
+                "TertiaryDialogue": "It says: 'reeeeeeeeeeeeeeeeeeeee'.",
+                "CanPickup": true,
+                "PickedUp": false,
+                "IsAnEel": false
+            }
+        ]
+    }
+  ]
+}
